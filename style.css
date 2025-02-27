@@ -80,6 +80,115 @@ h1 {
     color: #00d9a5;
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+}
+
+header .container nav.active {
+    display: block;
+}
+
+@media screen and (max-width: 1199.98px) {
+    header .container {
+        width: 75%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    header .container {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header nav ul li {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    header {
+        position: relative;
+        padding: 1.3rem;
+    }
+
+    header .container nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 250%;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+    }
+
+    header .container nav ul {
+        display: block;
+    }
+
+    header .container nav ul li {
+        text-align: center;
+        margin: 20px;
+    }
+
+    header .container .menu-toggle {
+        display: block;
+    }
+
+    header .container {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    header nav ul li {
+        margin: 0 0.8rem;
+    }
+}
+
+@media screen and (max-width: 575.95px) {
+    header {
+        padding: 0.6rem;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header .menu-toggle {
+        font-size: 1.3rem;
+    }
+
+    header .container {
+        width: 90%;
+    }
+
+    header nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    header nav ul {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+/* HOME */
 .about-container {
     height: 100vh;
     display: flex;
@@ -107,7 +216,7 @@ h1 {
     align-items: center;
 }
 
-.detail-content {}
+
 
 .about-details h2 {
     font-size: 2.5rem;
@@ -139,8 +248,148 @@ h1 {
     background-color: transparent;
 }
 
+@media screen and (max-width: 1199.98px) {
+    .about-details h2 {
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
 
+    .role {
+        line-height: 1.3;
+    }
 
+    .description {
+        margin: 0.4rem 0;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 0.8rem 1.5rem;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .about-details h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .role {
+        /* line-height: 1; */
+    }
+
+    .description {
+        margin: 0.2rem 0;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #home .about-container {
+        position: relative;
+        display: block;
+    }
+
+    #home .about-container .about-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 6rem 6rem 6rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #home .about-container .about-avt {
+        width: 100%;
+    }
+
+    .about-details h2 {
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .role {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin: 0.4rem 0;
+        line-height: 1.5;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 0.8rem 1.4rem;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #home .about-container .about-details {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .about-details h2 {
+        font-size: 2.5rem;
+    }
+
+    .role {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        margin: 0.3rem 0;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 0.8rem 1.4rem;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 575.95px) {
+    #home .about-container .about-details {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .about-details h2 {
+        font-size: 2rem;
+    }
+
+    .role {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        margin: 0.2rem 0;
+        line-height: 1.3;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        height: 35px;
+    }
+}
+
+/* info */
 #infor h4 {
     color: #34e89e;
     font-size: 1rem;
@@ -205,6 +454,14 @@ h1 {
     color: #34d9e8;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1199.98px) {}
+
+@media screen and (max-width: 991.98px) {}
+
+@media screen and (max-width: 767.98px) {}
+
+@media screen and (max-width: 575.95px) {}
 
 /* --PROJECT-- */
 
