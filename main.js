@@ -1,24 +1,24 @@
-const header = document.querySelector('header');
+// const header = document.querySelector('header');
 
-let scrollTimeout;
+// let scrollTimeout;
 
-function hideHeader() {
-    header.style.top = '-100%';
-}
+// function hideHeader() {
+//     header.style.top = '-100%';
+// }
 
-function showHeader() {
-    header.style.top = '0';
-}
+// function showHeader() {
+//     header.style.top = '0';
+// }
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY > window.innerHeight) {
-        showHeader();
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(hideHeader, 2000);
-    } else {
-        showHeader();
-    }
-});
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY > window.innerHeight) {
+//         showHeader();
+//         clearTimeout(scrollTimeout);
+//         scrollTimeout = setTimeout(hideHeader, 1000);
+//     } else {
+//         showHeader();
+//     }
+// });
 
 document.addEventListener("wheel", (e) => {
     e.preventDefault();
@@ -35,6 +35,13 @@ document.addEventListener("wheel", (e) => {
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('nav');
 
-menuToggle.addEventListener('click', () => {
+menuToggle.addEventListener('click', (event) => {
     navMenu.classList.toggle('active');
+    event.stopPropagation();
+});
+
+document.addEventListener('click', (event) => {
+    if (!menuToggle.contains(event.target)) {
+        navMenu.classList.remove('active');
+    }
 });
