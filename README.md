@@ -24,5 +24,5 @@ A goal that i wanna get in 2025.
 ## 🚀 How to Run Locally
 1. Clone the project:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nghoangquan175/My-Portfolio.git
    cd portfolio-website
