@@ -79,14 +79,14 @@ nav ul #dropdown .dropdown-menu {
     padding: 5px 0;
 }
 
-#dropdown .dropdown-menu .dropdown-item:first-child {
+/* #dropdown .dropdown-menu .dropdown-item:first-child {
     border-bottom: 1px solid white;
-}
+} */
 
 nav ul #dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    bottom: -420%;
+    bottom: -600%;
 }
 
 nav ul #dropdown .dropdown-menu::after {
@@ -94,7 +94,7 @@ nav ul #dropdown .dropdown-menu::after {
     content: "";
     display: block;
     background-color: black;
-    top: -8%;
+    top: -5%;
     left: 45%;
     height: 10px;
     width: 10px;
@@ -942,10 +942,11 @@ section#certificate {
 
 .target__content {
     display: flex;
+    justify-content: space-between;
 }
 
 .target__content .target-infor {
-    width: 45%;
+    width: 55%;
 }
 
 .target-infor {
@@ -992,7 +993,7 @@ section#certificate {
 }
 
 .target__content .target-img {
-    width: 55%;
+    width: 32%;
 }
 
 .target-img img {
